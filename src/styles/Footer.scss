@@ -1,0 +1,29 @@
+@import './theme.scss';
+
+.footer {
+  margin-top: 100px;
+  padding-bottom: 50px;
+
+  &-head {
+    display: flex;
+    border-bottom: 1px solid $border;
+    padding-bottom: 30px;
+    .link {
+      border: 1px solid $border;
+      color: $secondary;
+      width: 40px;
+    }
+    .signup {
+      border: 1px solid $border;
+      color: $secondary;
+      width: 120px;
+    }
+  }
+  &-middle {
+  }
+  &-end {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 0;
+  }
+}

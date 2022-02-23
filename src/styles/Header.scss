@@ -1,0 +1,55 @@
+@import './theme.scss';
+.header {
+  box-shadow: $primary 0px 0px 8px 0px;
+  background-color: black;
+  height: 72px;
+  color: $secondary;
+  position: fixed !important;
+  width: 100%;
+  z-index: 999;
+
+  .navbar-brand {
+    img {
+      width: 60px;
+      margin-right: 10px;
+    }
+    a {
+      color: $secondary;
+      font-weight: bold;
+      text-decoration: unset;
+      &.active {
+        color: $secondary;
+      }
+    }
+  }
+
+  .link {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+
+    a {
+      color: $secondary;
+      font-weight: bold;
+      text-decoration: unset;
+      &.active {
+        color: $secondary;
+        text-decoration: underline;
+      }
+    }
+    .dropdown-menu {
+      background-color: black;
+      border: 1px solid $border;
+      .dropdown-item:hover {
+        background-color: #93c1f1 !important;
+        color: $primary !important;
+        a {
+          color: $primary !important;
+        }
+      }
+    }
+  }
+  .dropdown-toggle::after {
+    display: none;
+  }
+}

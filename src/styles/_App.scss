@@ -1,0 +1,193 @@
+@import './theme.scss';
+@import './Header.scss';
+@import './Filter.scss';
+@import './Sort.scss';
+@import './NFTCard.scss';
+@import './Stats.scss';
+@import './Account.scss';
+@import './Settings.scss';
+@import './CreateCollection.scss';
+@import './CreateItem.scss';
+@import './Login.scss';
+@import './Collection.scss';
+@import './Search.scss';
+@import './MyCollections.scss';
+@import './Home.scss';
+@import './Footer.scss';
+@import './Explore.scss';
+@import './Address.scss';
+@import './Asset.scss';
+
+.App {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+}
+
+.form-control,
+.select__control {
+  color: $secondary !important;
+  border-color: $border !important;
+  background-color: #000 !important;
+  .select__value-container {
+    .select__single-value {
+      color: $secondary !important;
+    }
+  }
+  .select__indicators {
+    .select__indicator-separator {
+      background-color: $border !important;
+    }
+  }
+}
+.select__menu {
+  background-color: black !important;
+
+  border: 1px solid $border !important;
+}
+
+.list-group {
+  border: 1px solid $border !important;
+  &-item {
+    color: $secondary !important;
+    background-color: black !important;
+    border-bottom: 1px solid $border !important;
+  }
+}
+
+.dropdown {
+  &-menu {
+    background-color: black !important;
+    border: 1px solid $border !important;
+    .dropdown-item {
+      color: $secondary !important;
+    }
+  }
+  .btn {
+    color: $secondary;
+  }
+}
+
+.btn-primary {
+  border: 1px solid $border !important;
+  background-color: $primary !important;
+  color: $secondary !important;
+}
+.btn-secondary {
+  border: 1px solid $border !important;
+  background-color: $secondary !important;
+  color: $primary !important;
+}
+.btn-outline-primary {
+  border: 1px solid $border !important;
+  color: $primary !important;
+}
+.btn-outline-secondary {
+  border: 1px solid $border !important;
+  color: $secondary !important;
+}
+
+.jazz-icon > div {
+  border-radius: 50% !important;
+}
+
+.offcanvas {
+  background-color: black !important;
+  box-shadow: $primary 0px 0px 8px 0px;
+
+  &-header {
+    border-bottom: 1px solid $border;
+    .btn-close {
+      background-color: $secondary;
+      color: $secondary;
+    }
+  }
+  &-body {
+    .list-group {
+      .add-funds {
+        background-color: $secondary !important;
+        color: $primary !important;
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+.tooltip-inner {
+  background-color: $secondary !important;
+  color: black !important;
+  padding: 10px 15px !important;
+  max-width: 350px !important;
+}
+
+.tooltip-arrow {
+  border-color: $secondary !important;
+}
+
+.dropdown-menu {
+  min-width: 200px;
+}
+
+.accordion {
+  &-item {
+    border: unset;
+    .accordion-header {
+      border: 1px solid $border;
+      border-radius: 3px;
+    }
+    .accordion-body {
+      border: 1px solid $border;
+      border-top: unset;
+      padding: 20px;
+      border-bottom-left-radius: 3px;
+      border-bottom-right-radius: 3px;
+    }
+  }
+}
+
+.d-flex-1 {
+  flex: 1;
+}
+.d-flex-2 {
+  flex: 2;
+}
+.d-flex-3 {
+  flex: 3;
+}
+.d-flex-4 {
+  flex: 4;
+}
+.d-flex-5 {
+  flex: 5;
+}
+.d-flex-6 {
+  flex: 6;
+}
+.d-flex-7 {
+  flex: 7;
+}
+.d-flex-8 {
+  flex: 8;
+}
+.d-flex-9 {
+  flex: 9;
+}
+
+.d-h-center {
+  display: flex;
+  align-items: center;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #888;
+}
+::-webkit-scrollbar-thumb {
+  background: #333;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}

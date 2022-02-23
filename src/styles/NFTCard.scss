@@ -1,0 +1,34 @@
+.nftcard {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  cursor: pointer;
+  font-size: 12px;
+  font-weight: bold;
+  margin: 5px;
+  color: black;
+
+  .card-img-top {
+    flex: 1;
+  }
+  .card-body {
+    flex: unset;
+    .title {
+      color: rgb(112, 122, 131);
+    }
+    .patch {
+      color: $primary;
+      margin-left: 4px;
+    }
+    .price {
+      img {
+        width: 14px;
+      }
+    }
+    .btn {
+      font-size: 12px;
+      font-weight: bold;
+      color: $primary;
+    }
+  }
+}

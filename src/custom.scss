@@ -1,0 +1,26 @@
+@import '~bootstrap/scss/bootstrap-utilities';
+
+// Override default variables before the import
+$body-bg: #000;
+$border-color: #0366d6;
+
+$theme-colors: (
+  'info': tomato,
+  'danger': teal
+);
+
+//Generate utilites for Cursor
+$utilities: map-merge(
+  $utilities,
+  (
+    'cursor': (
+      property: cursor,
+      values: auto default pointer wait text move help not-allowed
+    )
+  )
+);
+
+// Import Bootstrap and its default variables
+@import '~bootstrap/scss/bootstrap.scss';
+@import '~react-toggle/style.css';
+@import 'react-toastify/dist/ReactToastify.css';

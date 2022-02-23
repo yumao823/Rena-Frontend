@@ -1,0 +1,12 @@
+.search {
+  flex: 1;
+  .input-group-text,
+  .form-control {
+    color: $secondary;
+    background-color: black;
+    border-color: $border;
+  }
+  .form-control {
+    border-left: 0;
+  }
+}

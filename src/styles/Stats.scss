@@ -1,0 +1,13 @@
+.stats {
+  padding: 120px 30px 30px 30px;
+  .basic-single {
+    .select__menu {
+      color: $secondary;
+      background-color: black;
+      border: 1px solid $border;
+    }
+  }
+  &-item {
+    border-bottom: 1px solid $border;
+  }
+}

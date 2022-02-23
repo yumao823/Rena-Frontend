@@ -1,0 +1,120 @@
+.filter {
+  width: 340px;
+  border-right: 1px solid $border;
+
+  &-head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 20px;
+    height: 64px;
+  }
+
+  .accordion {
+    border-bottom: 1px solid $border;
+    &-item {
+      background-color: transparent;
+      border: unset;
+      .accordion-header {
+        border-radius: unset;
+        border-bottom: unset;
+        border-right: unset;
+        border-left: unset;
+        .accordion-button {
+          background-color: transparent;
+          color: $secondary !important;
+        }
+        .accordion-button:not(.collapsed) {
+          background-color: transparent;
+        }
+      }
+      .accordion-collapse {
+        border-top: 1px solid $border;
+        .accordion-body {
+          border-left: unset;
+          border-right: unset;
+          border-radius: unset;
+          border-bottom: unset;
+          .btn {
+            color: $secondary;
+            border: 1px solid $border;
+            margin: 3px 6px;
+            text-align: left;
+          }
+          .collections,
+          .onsalesin {
+            .search {
+              margin-bottom: 16px;
+            }
+            &-tag {
+              border: 0.1px solid $border;
+              border-radius: 3px;
+              cursor: pointer;
+              padding: 5px;
+              max-width: 120px;
+              overflow: hidden;
+              text-overflow: ellipsis;
+              white-space: nowrap;
+            }
+            &-item {
+              cursor: pointer;
+              padding: 4px 0;
+              img {
+                width: 30px;
+                height: 30px;
+                border-radius: 50%;
+                border: 1px solid $secondary;
+              }
+              .patch-check {
+                color: $primary;
+              }
+            }
+          }
+          .chains,
+          .categories {
+            img {
+              width: 30px;
+              height: 30px;
+              background-color: $secondary;
+              border-radius: 50%;
+            }
+          }
+          .price {
+            .basic-single {
+              .select__control {
+                padding: 4px;
+              }
+              .select__menu {
+                background-color: black;
+                border: 1px solid $border;
+              }
+            }
+            img,
+            .dollar {
+              width: 30px;
+              height: 30px;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              color: black;
+              font-weight: bold;
+              border: 1px solid $border;
+              border-radius: 50%;
+              background-color: $secondary;
+              margin-right: 10px;
+            }
+            .form-control {
+              background-color: black;
+              color: $secondary;
+              border-color: $border;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  &.collapsed {
+    width: 50px;
+  }
+}

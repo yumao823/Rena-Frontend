@@ -1,0 +1,132 @@
+.settings {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+
+  .nav-container {
+    border-right: 1px solid $border;
+    .nav {
+      &-item {
+        .nav-link {
+          color: $secondary;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+
+  .list-group {
+    &-item {
+      padding: 4px 0;
+    }
+  }
+
+  .input-group {
+    &-text {
+      border: none;
+      background-color: black;
+      color: $secondary;
+    }
+    .form-control {
+      border: none;
+    }
+  }
+
+  .form-label {
+    font-weight: bold;
+  }
+
+  .btn {
+    font-weight: bold;
+    color: $secondary;
+    border: 2px solid $border;
+    padding: 8px 30px;
+  }
+  .btn:hover {
+    background-color: gray;
+  }
+
+  .profile {
+    max-width: 700px;
+    padding: 20px 30px;
+    .profile-upload {
+      background-color: $secondary;
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      label {
+        width: 100%;
+        height: 150px;
+      }
+    }
+    .banner-upload {
+      background-color: $secondary;
+      width: 150px;
+      height: 120px;
+      border-radius: 20px;
+      label {
+        width: 100%;
+        height: 120px;
+      }
+    }
+    .wallet-address {
+      border: 1px solid $border;
+      border-radius: 4px;
+    }
+  }
+
+  .notifications {
+    max-width: 700px;
+    padding: 20px 30px;
+    .input-group {
+      &-text {
+        border: 1px solid $border;
+        border-right: none;
+        img {
+          width: 30px;
+          height: 30px;
+          border-radius: 50%;
+          color: $secondary;
+        }
+      }
+      .form-control {
+        border: 1px solid $border;
+      }
+    }
+  }
+
+  .offers {
+    max-width: 800px;
+    padding: 20px 30px;
+    &-item {
+      border-bottom: 1px solid $border;
+    }
+    .basic-single {
+      max-width: 150px;
+      img {
+        width: 30px;
+        height: 20px;
+        border-radius: 10px;
+      }
+    }
+  }
+  .appearance {
+    padding: 20px 30px;
+    .active {
+      color: black;
+      background-color: $secondary;
+    }
+    .basic-single {
+      max-width: 150px;
+      img {
+        width: 30px;
+        height: 20px;
+        border-radius: 10px;
+      }
+    }
+  }
+
+  .account-support {
+    padding: 20px 30px;
+  }
+}

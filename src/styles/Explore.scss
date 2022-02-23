@@ -1,0 +1,23 @@
+@import './theme.scss';
+
+.explore {
+  display: flex;
+  padding-top: 72px;
+  max-height: 100vh;
+  height: 100vh;
+  .nft-content {
+    height: 100%;
+    overflow-y: scroll;
+    .sort {
+      display: flex;
+      align-items: center;
+      background-color: black;
+      border-bottom: 1px solid $border;
+      padding: 12px;
+      z-index: 9;
+    }
+  }
+  .empty {
+    margin: 5px;
+  }
+}

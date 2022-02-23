@@ -1,0 +1,27 @@
+.my-collections {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 100px 0;
+  .btn {
+    border: 1px solid $border;
+    color: $secondary;
+  }
+  .btn::after {
+    display: none;
+  }
+  .dropdown {
+    &-menu {
+      .dropdown-item {
+        img,
+        svg {
+          width: 20px;
+          height: 20px;
+          border: 1px solid gray;
+          border-radius: 50%;
+          margin-right: 10px;
+        }
+      }
+    }
+  }
+}

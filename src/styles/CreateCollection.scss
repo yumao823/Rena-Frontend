@@ -1,0 +1,83 @@
+@import './theme.scss';
+
+.create-collection {
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 90px 0;
+  .item-upload {
+    background-color: $secondary;
+    width: 200px;
+    height: 160px;
+    border-radius: 5px;
+    border: 2px dashed $border;
+    label {
+      cursor: pointer;
+      width: 100%;
+      height: 100%;
+    }
+  }
+  .item-upload:hover {
+    background-color: grey;
+  }
+  .form-control {
+    border: 1px solid $border;
+  }
+  .category-select {
+    .dropdown-toggle {
+      padding: 10px 20px;
+      &::after {
+        display: none;
+      }
+    }
+  }
+  .links {
+    border: 1px solid $border;
+    border-radius: 5px;
+    .input-group {
+      &-text {
+        background-color: #000;
+        color: #fff;
+        border: none;
+        border-radius: 0;
+        border-bottom: 1px solid $border;
+        padding: 12px 20px;
+      }
+      .form-control {
+        border: none;
+        border-radius: 0;
+        border-left: 1px solid $border;
+        border-bottom: 1px solid $border;
+      }
+    }
+  }
+  .border-top-left {
+    border-top-left-radius: 5px !important;
+  }
+  .border-top-right {
+    border-top-right-radius: 5px !important;
+  }
+  .border-bottom-left {
+    border-bottom-left-radius: 5px !important;
+  }
+  .border-bottom-right {
+    border-bottom-right-radius: 5px !important;
+  }
+  label {
+    font-weight: bold;
+  }
+  .btn {
+    color: $secondary;
+    font-weight: bold;
+    border-color: $border !important;
+  }
+  .btn:hover {
+    color: $primary;
+    background-color: gray;
+  }
+  img {
+    width: 24px;
+    border-radius: 50%;
+    border: 1px solid gray;
+  }
+}

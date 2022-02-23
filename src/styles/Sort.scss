@@ -1,0 +1,23 @@
+@import './theme.scss';
+
+.sorter {
+  display: flex;
+
+  .basic-single {
+    .select__menu {
+      color: $secondary;
+      background-color: black;
+      border: 1px solid $border;
+    }
+  }
+  .btn-group {
+    border: 1px solid $border;
+    border-radius: 3px;
+    .active {
+      background-color: $secondary;
+      svg {
+        fill: #000;
+      }
+    }
+  }
+}

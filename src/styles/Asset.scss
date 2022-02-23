@@ -1,0 +1,136 @@
+@import './theme.scss';
+
+.asset {
+  padding: 100px;
+
+  .accordion {
+    &-item {
+      background-color: black;
+      .accordion-header {
+        .accordion-button {
+          background-color: black;
+          color: $secondary;
+          font-weight: bold;
+        }
+      }
+    }
+  }
+
+  &-logo {
+    border: 1px solid $border;
+    border-radius: 5px;
+    width: 100%;
+    height: 500px;
+    margin-bottom: 30px;
+    &-head {
+      border-bottom: 1px solid $border;
+    }
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  .description {
+    &-head {
+      padding: 20px;
+      border-top-left-radius: 3px;
+      border-top-right-radius: 3px;
+      border: 1px solid $border;
+    }
+    .createdby {
+      display: flex;
+      border: 1px solid $border;
+      border-top: none;
+      padding: 20px;
+    }
+    .desc-logo {
+      width: 50px;
+      height: 50px;
+    }
+    .btn-group {
+      border: 1px solid $border;
+      border-radius: 3px;
+    }
+  }
+
+  .head {
+    display: flex;
+    justify-content: space-between;
+    .dropdown {
+      &-toggle {
+        padding: 14px;
+      }
+      &-toggle::after {
+        display: none;
+      }
+      &-menu {
+        .dropdown-item {
+          font-weight: bold;
+          img,
+          svg {
+            width: 20px;
+            height: 20px;
+            margin-right: 6px;
+          }
+        }
+      }
+    }
+  }
+
+  .info {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    .item {
+      display: flex;
+      align-items: center;
+      margin-right: 10px;
+    }
+  }
+
+  .sale {
+    border: 1px solid $border;
+    border-radius: 5px;
+    padding: 10px 0;
+    &-head {
+      padding: 10px 20px;
+      border-bottom: 1px solid $border;
+    }
+    &-body {
+      padding: 10px 20px;
+      img {
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+      }
+    }
+    .btn-bundle {
+      background-color: $primary;
+      margin-left: 20px;
+    }
+  }
+
+  .price {
+    &-item {
+      .basic-single {
+        width: 40%;
+      }
+    }
+  }
+
+  .price,
+  .listings,
+  .offers,
+  .activity {
+    &-item {
+      align-items: center;
+    }
+  }
+
+  .activity {
+  }
+
+  .attributes {
+  }
+}
